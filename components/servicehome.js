@@ -1,4 +1,4 @@
-async function serviceComponent(target, contentType) {
+async function serviceComponentMin(target, contentType) {
   fetch(
     `https://cdn.contentful.com/spaces/c7mvxwqo377u/environments/master/entries?access_token=E-RDKeYnP6fPL12njEjE-P2mHwG0f1DQLfP2Ey7cgyY&content_type=${contentType}`
   )
@@ -35,13 +35,9 @@ async function serviceComponent(target, contentType) {
                         <div class="service-el__title">
                             <h3>${entryTitle}</h3>
                         </div>
-                        <div class="service-el__desc">
-                            <p>${entryDesc}</p>
-                        </div>
-                        <div class="service-el__link">
-                            <a href="${entryUrl}" target="_blank">Sitio web</a>
-                        </div>
-                        
+                        <div>
+                            <a href="./services" class="service-el__read-more" id="read-more">Leer más</a>
+                        </div>                        
                     </div>
                     `;
             target.appendChild(containerEl);

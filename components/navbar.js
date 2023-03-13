@@ -16,7 +16,7 @@ function navbarComponent(target, headerText, flagBckg) {
                     <a href="./index.html">Home</a>
                 </div>
                 <div class="navbar__menu-el">
-                <a href="./services.html">Servicios</a>
+                <a href="./services.html">Experiencias</a>
                 </div>
                 <div class="navbar__menu-el">
                 <a href="./portfolio.html">Portfolio</a>

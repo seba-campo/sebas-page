@@ -1,18 +1,17 @@
-function main(){
-    const footerSection = document.querySelector(".footer");
-    const headerSection = document.querySelector(".header");
-    const servicesSection = document.querySelector(".services__list");
-    
-    const contentType = "desafom4";
+function main() {
+  const footerSection = document.querySelector(".footer");
+  const headerSection = document.querySelector(".header");
+  const servicesSection = document.querySelector(".services__list");
 
-    footerComponent(footerSection);
-    navbarComponent(headerSection, "Services", false);
-    serviceComponent(servicesSection, contentType);
+  const contentType = "sebaCampoPage";
 
-    const titleEl = document.querySelector('.services__h2');
+  footerComponent(footerSection);
+  navbarComponent(headerSection, "Services", false);
+  serviceComponent(servicesSection, contentType);
 
-    titleEl.textContent = "Mis servicios"
+  const titleEl = document.querySelector(".services__h2");
 
+  titleEl.textContent = "Experiencias laborales";
 }
 
 main();
