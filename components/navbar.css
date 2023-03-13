@@ -1,0 +1,133 @@
+@import url("https://fonts.googleapis.com/css2?family=Michroma&display=swap");
+
+.header__container {
+  background-image: url("../src/banner-home.png");
+
+  background-repeat: no-repeat;
+  /* background-attachment: fixed; */
+  background-size: cover;
+  background-position: center top;
+  height: 80vh;
+  /* background-color: rgb(28, 17, 45); */
+}
+
+.navbar {
+  display: flex;
+  height: 15vh;
+  justify-content: space-between;
+  backdrop-filter: blur(3px);
+}
+
+.navbar__menu-desk {
+  display: none;
+}
+@media (min-width: 769px) {
+  .navbar__menu-desk {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    /* height: 15vh; */
+    color: rgb(227, 227, 227);
+    font-family: "Michroma", sans-serif;
+    font-size: 20px;
+  }
+  .navbar__menu-el {
+    margin: 0 15px;
+  }
+}
+
+.navbar__logo {
+  /* width: 170px; */
+  height: 10vh;
+  margin: 14px 10px;
+}
+
+.navbar__hamburger {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+@media (min-width: 769px) {
+  .navbar__hamburger {
+    display: none;
+  }
+}
+
+.hamburguer__black-box {
+  width: 50px;
+  height: 10px;
+  margin: 4px 35px;
+  border-radius: 5px;
+  background-color: rgb(227, 227, 227);
+}
+
+.navbar__menu-modal {
+  display: none;
+  position: absolute;
+  border-radius: 5px;
+  left: 0px;
+  top: 0px;
+  /* cuando tiene display:flex */
+  flex-direction: column;
+  /* background: rgb(104, 66, 141); */
+  background: linear-gradient(
+    180deg,
+    rgb(104, 66, 141) 0%,
+    rgb(173, 57, 137) 100%
+  );
+  height: 100vh;
+  width: 100vw;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.menu__close-btn {
+  width: 100vw;
+  position: absolute;
+  left: calc(100vw - 70px);
+  top: 15px;
+  color: black;
+  font-family: "Micrhoma", sans-serif;
+  font-size: 30px;
+}
+
+.navbar__menu-modal-el {
+  display: flex;
+  align-items: center;
+  font-family: "Micrhoma", sans-serif;
+  height: 150px;
+  font-size: 27px;
+  margin: 15 0;
+}
+
+.header__hr {
+  display: none;
+}
+@media (min-width: 769px) {
+  .header__hr {
+    display: inherit;
+    border: 1.5px solid #cecece;
+    box-shadow: inset;
+    margin: 0 auto;
+    /* background: linear-gradient(left , white 2%, #E6E6E6 50%, white 98%); */
+  }
+}
+
+.header__home {
+  height: 65vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  backdrop-filter: blur(3px);
+  z-index: 1;
+}
+
+.header__bienvenida {
+  margin: 0 0;
+  font-family: "Michroma", sans-serif;
+  font-size: 38px;
+  text-align: center;
+  color: white;
+  font-weight: 700;
+}
