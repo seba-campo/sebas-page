@@ -35,7 +35,7 @@ function navbarComponent(target, headerText, flagBckg) {
                     <a href="./index.html">HOME</a>
                 </div>
                 <div class="navbar__menu-modal-el">
-                <a href="./services.html">SERVICIOS</a>
+                <a href="./services.html">EXPERIENCIAS</a>
                 </div>
                 <div class="navbar__menu-modal-el">
                 <a href="./portfolio.html">PORTFOLIO</a>

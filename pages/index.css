@@ -14,8 +14,8 @@ body {
   flex-direction: column-reverse;
   justify-content: space-between;
   align-items: center;
-  /* width: 100vw; */
-  height: 60vh;
+  width: 100vw;
+  /* height: 60vh; */
   font-family: "Poppins", sans-serif;
   padding: 3px 0px 0px 0px;
   background-color: #6f4761;
@@ -38,12 +38,13 @@ body {
 }
 
 .about__profile-img {
+  row-gap: 0px;
   margin: 0 0;
   height: auto;
 }
 
 .about__image {
-  width: 300px;
+  width: 250px;
   /* margin: 15px 50px 40px 50px; */
 }
 @media (min-width: 769px) {
